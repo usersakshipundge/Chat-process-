@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real-Time Chat UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="chat-app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">Chats</div>
+
+    <ul class="user-list">
+      <li class="user active">
+        <span class="avatar"></span>
+        <span class="name">Aarav</span>
+        <span class="badge">2</span>
+      </li>
+      <li class="user">
+        <span class="avatar"></span>
+        <span class="name">Ishita</span>
+      </li>
+      <li class="user">
+        <span class="avatar"></span>
+        <span class="name">Rohan</span>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Chat Window -->
+  <main class="chat-window">
+    <header class="chat-header">
+      <div class="chat-user">
+        <span class="avatar"></span>
+        <span class="name">Aarav</span>
+      </div>
+      <span class="status online">Online</span>
+    </header>
+
+    <div class="messages" id="messages">
+      <div class="message received">Hey! How’s the project going?</div>
+      <div class="message sent">Almost done. Just polishing UI 😄</div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="messageInput" placeholder="Type a message..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
